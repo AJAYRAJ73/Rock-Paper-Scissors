@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rock Paper Scissors</title>
+
+<link rel="stylesheet" href="Game.css">
+</head>
+
+<body>
+
+<div class="game">
+    <h2>✊ Rock ✋ Paper ✌️</h2>
+    <p>Choose your move</p>
+
+    <div class="choices">
+        <button onclick="play('rock')">✊</button>
+        <button onclick="play('paper')">✋</button>
+        <button onclick="play('scissors')">✌️</button>
+    </div>
+
+    <div class="result" id="result">Make your move!</div>
+
+    <div class="score">
+        You: <span id="playerScore">0</span> |
+        CPU: <span id="cpuScore">0</span>
+    </div>
+
+    <div class="controls">
+        <button class="reset" onclick="resetGame()">🔄 Reset Game</button>
+    </div>
+</div>
+
+<!-- Sound Effects -->
+<audio id="winSound" src="https://assets.mixkit.co/sfx/preview/mixkit-winning-notification-2018.mp3"></audio>
+<audio id="loseSound" src="https://assets.mixkit.co/sfx/preview/mixkit-player-losing-or-failing-2042.mp3"></audio>
+<audio id="drawSound" src="https://assets.mixkit.co/sfx/preview/mixkit-game-click-1114.mp3"></audio>
+
+<script src="Game.js"></script>
+
+</body>
+</html>
